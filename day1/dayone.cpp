@@ -5,7 +5,8 @@
 #include <string>
 
 // necessary global variables
-std::string INPUT_PATH = "./dayoneinput.txt";
+std::string INPUT_PATH =
+    "./dayoneinput.txt"; // get input case and name it dayoneinput.txt
 int PASSWORD = 0;
 int POSITION = 50;
 
