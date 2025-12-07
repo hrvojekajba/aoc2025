@@ -4,7 +4,7 @@
 #include <string>
 
 // global variable
-int TOTAL_JOLTAGE = 0;
+int TOTAL_JOLTAGE_P1 = 0;
 
 void part_one(std::string line) {
     int first_index = 0;
@@ -20,7 +20,7 @@ void part_one(std::string line) {
     }
 
     std::string line_joltage = std::string(1, line[first_index]) + line[second_index];
-    TOTAL_JOLTAGE += std::stoi(line_joltage);
+    TOTAL_JOLTAGE_P1 += std::stoi(line_joltage);
 }
 
 int main(int argv, char *argc[]) {
@@ -36,7 +36,7 @@ int main(int argv, char *argc[]) {
         part_one(line);
     }
 
-    std::cout << "TOTAL JOLTAGE - PART 1: " << TOTAL_JOLTAGE << "\n";
+    std::cout << "TOTAL JOLTAGE - PART 1: " << TOTAL_JOLTAGE_P1 << "\n";
 
     return 0;
 }
