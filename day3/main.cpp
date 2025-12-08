@@ -3,10 +3,9 @@
 #include <fstream>
 #include <string>
 
-// global variable
-int TOTAL_JOLTAGE_P1 = 0;
-
 void part_one(std::string line) {
+    int TOTAL_JOLTAGE_P1 = 0;
+
     int first_index = 0;
     for (int i = 0; i < line.length() - 1;i++) {
         if (line[i] > line[first_index])
